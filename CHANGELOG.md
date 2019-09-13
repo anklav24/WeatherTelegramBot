@@ -6,15 +6,12 @@ The format is based on:
 * https://github.com/olivierlacan/keep-a-changelog 
 * https://semver.org/lang/ru/ 
 
-## [0.1.0] - 2019-09-13
-### Added
+### [0.1.0] - 2019-09-13
+#### Added
 - New documetation.
-
-### Changed
+#### Changed
 - Comments in code.
-
-### Fixed
+#### Fixed
 - Fix Licence extention from .md.
-
-### Removed
+#### Removed
 - Token API.
