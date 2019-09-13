@@ -1,1 +1,1 @@
-Рад любым доработкам.
+Glad of any help and improvements.
