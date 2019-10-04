@@ -7,17 +7,17 @@ The format is based on:
 * https://semver.org/lang/ru/ 
 
 ### [0.1.0] - 2019-10-04
-#### Added
+#### Added:
 - New feature. Input Token from keyboard.
-#### Changed
+#### Changed:
 - Documentation readme.
 
 ### [0.0.1] - 2019-09-13
-#### Added
+#### Added:
 - New documetation.
-#### Changed
+#### Changed:
 - Comments in code.
-#### Fixed
+#### Fixed:
 - Fix Licence extention from .md.
-#### Removed
+#### Removed:
 - Token API.
