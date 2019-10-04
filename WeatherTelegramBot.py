@@ -8,9 +8,11 @@ import pyowm
 # Импортируем пакет бота через ввод в CMD "pip install pytelegrambotapi"
 import telebot
 # Регистрируемся на сайте погоды, получаем ключ API
-owm = pyowm.OWM('YOUR_TOKEN', language='ru')
+owmToken = input('Ваш API токен от Pyowm: ')
+owm = pyowm.OWM(owmToken, language='ru')
 # Получаем токен через BotFather в телеграме в чате коммандами. /newbot имя моего APITelegramBot
-bot = telebot.TeleBot("YOUR_TOKEN")
+botToken = input('Ваш API токен от Телеграм бота: ')
+bot = telebot.TeleBot(botToken)
 
 # from pyowm.exceptions import api_response_error.NotFoundError
 

@@ -2,6 +2,7 @@
 # https://www.gitignore.io 
 Your ignored files 
 .idea/ 
+.token
 # Byte-compiled / optimized / DLL files 
 __pycache__/ 
 *.py[cod] 
