@@ -7,6 +7,7 @@
 import pyowm
 # Импортируем пакет бота через ввод в CMD "pip install pytelegrambotapi"
 import telebot
+
 # Регистрируемся на сайте погоды, получаем ключ API
 owmToken = input('Ваш API токен от Pyowm: ')
 owm = pyowm.OWM(owmToken, language='ru')
@@ -14,21 +15,23 @@ owm = pyowm.OWM(owmToken, language='ru')
 botToken = input('Ваш API токен от Телеграм бота: ')
 bot = telebot.TeleBot(botToken)
 
-# from pyowm.exceptions import api_response_error.NotFoundError
 
 # Когда боту пишут текстовое сообщение вызывается эта функция
 @bot.message_handler(content_types=['text'])
-
 def send_message(message):
     # Отдельно реагируем на сообщения /start и /help
     if message.text == "/start":
-        bot.send_message(message.from_user.id, "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
+        bot.send_message(message.from_user.id,
+                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
     elif message.text == "/Start":
-        bot.send_message(message.from_user.id, "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
+        bot.send_message(message.from_user.id,
+                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
     elif message.text == "/help":
-        bot.send_message(message.from_user.id, "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
+        bot.send_message(message.from_user.id,
+                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
     elif message.text == "/Help":
-        bot.send_message(message.from_user.id, "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
+        bot.send_message(message.from_user.id,
+                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
     else:
         # С помощью try заставляю пройти код, если функция observation не находит город
         # и выводит ошибку, то происходит переход к except
@@ -54,6 +57,7 @@ def send_message(message):
             answer = "Не найден город, попробуйте ввести название снова.\n"
             # Ответить сообщением
         bot.send_message(message.chat.id, answer)
+
 
 # Запускаем бота
 bot.polling(none_stop=True)
