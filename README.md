@@ -41,7 +41,7 @@
 
 Можете найти моего бота в телеграме:
 
- **@WeatherTelegramBot**
+ **@WeatherPyowmTelegramBot**
  
 ### Используемая лицензия: 
 Apache License Version 2.0, January 2004 
