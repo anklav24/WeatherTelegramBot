@@ -1,0 +1,3 @@
+pyowm~=3.0.0
+telebot~=0.0.3
+pyTelegramBotAPI
