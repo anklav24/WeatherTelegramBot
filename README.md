@@ -18,13 +18,13 @@
 - Найти бота в телеграмме.
 - Наслаждаться результатом своих непосильных трудов.
 
-### Инструкции по конфигурации и установке (истинный путь):
+### Инструкции по конфигурации и установке (Истинный путь):
 - установить Python https://www.python.org/downloads/
 - Установить pyowm (В командной строке от имени администратора вводим: "pip install pyowm" без кавычек)
 - Установить pyTelegramBotAPI ("pip install pyTelegramBotAPI")
 - Регистрируемся на сайте погоды https://openweathermap.org/, получаем ключ API
-- Получаем токен и создаем нового бота через BotFather в телеграме коммандой "/newbot"
-- Регистрируемся на Heroku.com и следуем мануалу.
+- Получаем токен и создаем нового бота через  **[@BotFather](https://t.me/BotFather)** в телеграме коммандой "/newbot"
+- Регистрируемся на [Heroku.com](https://Heroku.com) и следуем мануалу.
 - Создаем новый контейнер на хероку
 
  `heroku create weather-telegram-bot-010 --buildpack heroku/python`
@@ -54,7 +54,7 @@
 
 Можете найти моего бота в телеграме:
 
- **@WeatherPyowmTelegramBot**
+ **[@WeatherPyowmTelegramBot](https://t.me/WeatherPyowmTelegramBot)**
  
 ### Используемая лицензия: 
 Apache License Version 2.0, January 2004 
