@@ -24,7 +24,11 @@
 - Установить pyTelegramBotAPI ("pip install pyTelegramBotAPI")
 - Регистрируемся на сайте погоды https://openweathermap.org/, получаем ключ API
 - Получаем токен и создаем нового бота через  **[@BotFather](https://t.me/BotFather)** в телеграме коммандой "/newbot"
-- Регистрируемся на [Heroku.com](https://Heroku.com) и следуем мануалу.
+- Регистрируемся на [Heroku.com](https://Heroku.com) и следуем мануалу, устанавливаем все что нужно.
+- Переходим в папку с проектом в командной строке или баше и логинимся.
+
+`heroku login`
+
 - Создаем новый контейнер на хероку
 
  `heroku create weather-telegram-bot-010 --buildpack heroku/python`
