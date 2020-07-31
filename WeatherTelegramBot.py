@@ -58,6 +58,7 @@ def send_message(message):
                 answer += "На улице вроде норм!!!"
         except Exception:
             answer = "Не найден город, попробуйте ввести название снова.\n"
+            print(time.ctime(), "User id:", message.from_user.id)
             print(time.ctime(), "Message:", message.text, 'Error')
 
         bot.send_message(message.chat.id, answer)  # Ответить сообщением
