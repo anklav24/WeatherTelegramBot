@@ -42,6 +42,7 @@ def send_message(message):
             observation = owm.weather_at_place(message.text)
             weather = observation.get_weather()
             temp = weather.get_temperature("celsius")["temp"]  # Присваиваем переменной значение температуры из таблицы
+            print(time.ctime(), message.from_user.id)
             print(time.ctime(), "Message:", message.text, temp, "C", weather.get_detailed_status())
 
             # Формируем и выводим ответ
