@@ -34,7 +34,7 @@ def send_message(message):
             weather = observation.get_weather()
             temp = weather.get_temperature("celsius")["temp"]  # Присваиваем переменной значение температуры из таблицы
             print(time.ctime(), "User id:", message.from_user.id)
-            print(time.ctime(), "Message:", message.text, temp, "C", weather.get_detailed_status())
+            print(time.ctime(), "Message:", message.text.capitalize(), temp, "C", weather.get_detailed_status())
 
             # Формируем и выводим ответ
             answer = "В городе " + message.text.capitalize() + " сейчас " + weather.get_detailed_status() + "." + "\n"
