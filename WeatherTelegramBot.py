@@ -37,7 +37,7 @@ def send_message(message):
             print(time.ctime(), "Message:", message.text, temp, "C", weather.get_detailed_status())
 
             # Формируем и выводим ответ
-            answer = "В городе " + message.text + " сейчас " + weather.get_detailed_status() + "." + "\n"
+            answer = "В городе " + message.text.capitalize() + " сейчас " + weather.get_detailed_status() + "." + "\n"
             answer += "Температура около: " + str(temp) + " С" + "\n\n"
             if temp < -10:
                 answer += "Пи**ц как холодно, одевайся как танк!"
