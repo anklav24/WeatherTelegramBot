@@ -22,18 +22,9 @@ bot = telebot.TeleBot(botToken)
 def send_message(message):
     """Send the message to user with the weather"""
     # Отдельно реагируем на сообщения /start и /help
-    if message.text == "/start":
-        bot.send_message(message.from_user.id,
-                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
-    elif message.text == "/Start":
-        bot.send_message(message.from_user.id,
-                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
-    elif message.text == "/help":
-        bot.send_message(message.from_user.id,
-                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
-    elif message.text == "/Help":
-        bot.send_message(message.from_user.id,
-                         "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
+
+    if message.text.lower() == "/start" or message.text == "/help":
+        bot.send_message(message.from_user.id, "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
     else:
         # С помощью try заставляю пройти код, если функция observation не находит город
         # и выводит ошибку, то происходит переход к except
