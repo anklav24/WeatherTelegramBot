@@ -25,6 +25,12 @@
 - Регистрируемся на сайте погоды https://openweathermap.org/, получаем ключ API
 - Получаем токен и создаем нового бота через  **[@BotFather](https://t.me/BotFather)** в телеграме коммандой "/newbot"
 - Регистрируемся на [Heroku.com](https://Heroku.com) и следуем мануалу, устанавливаем все что нужно.
+- Добавляем файл Procfile (Без расширения, важно!)
+
+Содержимое Procfile: `worker: python weather_telegram_bot.py`
+
+- Добавляем файл requirements.txt с необходимыми зависимостями.
+
 - Переходим в папку с проектом в командной строке или баше и логинимся.
 
 `heroku login`
@@ -39,11 +45,19 @@
 
 - Устанавливаем в переменные окружения наши ключи API 
 
-`heroku config:set YOUR_API_KEY_NAME=YOUR_API_KEY`
+heroku: `heroku config:set YOUR_API_KEY_NAME=YOUR_API_KEY`
+
+ubuntu: 
+
+windows:
 
 - Запускаем приложение если вдруг само не поехало
 
 `heroku ps:scale worker=1`
+
+- Если надо остановить бота
+
+`heroku ps:scale worker=0`
 
 - Проверяем логи
 

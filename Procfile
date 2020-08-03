@@ -1,1 +1,1 @@
-worker: python WeatherTelegramBot.py
+worker: python weather_telegram_bot.py
