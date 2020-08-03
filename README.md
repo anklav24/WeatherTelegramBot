@@ -1,5 +1,8 @@
 # WeatherTelegramBot
 
+Status of last deployment:
+<br><img src="https://github.com/anklav24/WeatherTelegramBot/workflows/python-app/badge.svg?branch=master"><br>
+
 ### Для чего предназначен проект:
 Это телеграм бот который отвечает прогнозом погоды в ответ на название города.
 
