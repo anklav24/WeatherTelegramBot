@@ -22,6 +22,7 @@
 - установить Python https://www.python.org/downloads/
 - Установить pyowm (В командной строке от имени администратора вводим: "pip install pyowm" без кавычек)
 - Установить pyTelegramBotAPI ("pip install pyTelegramBotAPI")
+- Либо ставим все зависимости через `pip install -r requirements.txt`
 - Регистрируемся на сайте погоды https://openweathermap.org/, получаем ключ API
 - Получаем токен и создаем нового бота через  **[@BotFather](https://t.me/BotFather)** в телеграме коммандой "/newbot"
 - Регистрируемся на [Heroku.com](https://Heroku.com) и следуем мануалу, устанавливаем все что нужно.
