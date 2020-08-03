@@ -47,9 +47,9 @@
 
 heroku: `heroku config:set YOUR_API_KEY_NAME=YOUR_API_KEY`
 
-ubuntu: 
+ubuntu: to `~$ vi ~./bashrc` file add `export "YOUR_API_KEY_NAME=YOUR_API_KEY"`
 
-windows:
+windows: push win + break keys "System" -> "Advanced system settings" -> "Environment Variables..." -> "New..."
 
 - Запускаем приложение если вдруг само не поехало
 

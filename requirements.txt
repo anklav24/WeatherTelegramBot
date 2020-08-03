@@ -1,2 +1,3 @@
 pyowm~=2.10.0
-pyTelegramBotAPI~= 3.7.2
+pyTelegramBotAPI~=3.7.2
+pytest~=6.0.1
