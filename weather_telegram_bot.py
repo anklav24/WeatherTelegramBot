@@ -11,7 +11,7 @@ import time
 
 # config_dict = get_default_config()
 # config_dict['language'] = 'ru'  # Настраиваем язык для owm.
-owmToken = os.getenv('YOUR_OWN_TOKEN')  # Регистрируемся на сайте погоды, получаем ключ API
+owmToken = os.getenv('YOUR_OWM_TOKEN')  # Регистрируемся на сайте погоды, получаем ключ API
 owm = pyowm.OWM(owmToken, language='ru')
 botToken = os.getenv('YOUR_TELEGRAM_BOT_TOKEN')  # Получаем токен через BotFather в телеграме в чате коммандами. /newbot имя моего APITelegramBot
 bot = telebot.TeleBot(botToken)
